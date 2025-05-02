@@ -1,0 +1,149 @@
+/* Fondo general */
+body {
+    background-color: #f0dde1ff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 350px;
+    margin: 5px auto 0px;
+    display: block;
+  }
+  
+  
+  .flor-esquina-superior {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 10px;
+    width: 150px; 
+    z-index: 0;
+  }
+  
+  /* Imagen flor inferior izquierda */
+  .flor-esquina-inferior {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    z-index: 0;
+  }
+  #nombre{
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 150px;
+    color: #464646;
+  }
+  
+  /* Contador */
+  .contador {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #e5ab54ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0px auto 30px auto;
+    width: fit-content;
+  }
+  
+  .contadordesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contadordesc p {
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .contadordesc span {
+    font-size: 0.8rem;
+    color: white;
+  }
+  
+  /* Fecha y hora */
+  #fecha {
+    width: 300px;
+    margin: 20px auto 10px;
+    display: block;
+  }
+  /* Mensaje final */
+  .mensajeFinal {
+    font-size: 1.5rem;
+    color: #000;
+    margin-top: 10px;
+    display: none; /* Aparece con JS */
+  }
+
+  
+  /* Footer */
+  footer {
+    position: relative;
+    width: 100%;
+    height: 100px; /* ajustá según lo que necesités */
+    margin-top: 40px;
+    z-index: 1;
+  }
+  
+  .contenedor-footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .linea-centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #linea-central {
+    height: 80px;
+    width: auto;
+  }
+  
+  .izquierda, .derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .izquierda {
+    right: 55%; /* ?? espacio a la izquierda de la línea */
+  }
+  
+  .derecha {
+    left: 55%;  /* ?? espacio a la derecha de la línea */
+  }
+  
+  #waze {
+    width: 100px;
+  }
+  
+  #numeroMesa {
+    font-size: 70px;
+    color: #e5ab54ff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #textomesa {
+    height: 22px;
+    width: auto;
+  }
