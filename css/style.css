@@ -17,22 +17,22 @@ body {
   
   
   .flor-esquina-superior {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    margin-bottom: 30px;
-    width: 150px; 
-    z-index: 0;
-    margin-left: 15px;
+    width: 150px;
+    z-index: -1;
+    pointer-events: none;
   }
   
   /* Imagen flor inferior izquierda */
   .flor-esquina-inferior {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 150px;
-    z-index: 0;
+    z-index: -1;
+    pointer-events: none;
   }
   #nombre{
     position: relative;
@@ -148,3 +148,93 @@ body {
     height: 22px;
     width: auto;
   }
+  @media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+      text-align: center;
+      overflow-x: hidden;
+    }
+  
+    .logo {
+      width: 250px;
+    }
+  
+    .flor-esquina-superior,
+    .flor-esquina-inferior {
+      width: 90px;
+    }
+  
+    #nombre {
+      font-size: 80px;
+      margin-top: 30px;
+    }
+  
+    /* Contador */
+    .contador {
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  
+    .contadordesc p {
+      font-size: 2rem;
+    }
+  
+    .contadordesc span {
+      font-size: 0.7rem;
+    }
+  
+    /* Fecha */
+    #fecha {
+      width: 200px;
+      margin: 15px auto;
+    }
+  
+    .mensajeFinal {
+      font-size: 1.2rem;
+    }
+  
+    /* Footer */
+    footer {
+      height: auto;
+      margin-top: 30px;
+    }
+  
+    .bloque-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .linea-centro {
+      position: static;
+      transform: none;
+    }
+  
+    #linea-central {
+      height: 50px;
+    }
+  
+    .izquierda,
+    .derecha {
+      position: static;
+      transform: none;
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    #waze {
+      width: 60px;
+    }
+  
+    #numeroMesa {
+      font-size: 40px;
+    }
+  
+    #textomesa {
+      height: 20px;
+    }
+  }
+  
