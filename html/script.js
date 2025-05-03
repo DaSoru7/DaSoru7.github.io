@@ -4,7 +4,7 @@ $minutes = document.getElementById('minutos');
 $seconds = document.getElementById('segundos');
 $finalmessage = document.querySelector('mensajeFinal');
 
-const countdownDate = new Date('Jun 09 2025 16:00:00').getTime();
+const countdownDate = new Date('Jun 07 2025 16:00:00').getTime();
 
 let interval = setInterval(function(){
     const now =new Date().getTime();
