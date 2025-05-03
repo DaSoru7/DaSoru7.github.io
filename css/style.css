@@ -121,16 +121,16 @@ footer {
 
 .footer-col {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 #waze {
-  width: 60px;
+  width: 100px;
 }
 
 #numeroMesa {
-  font-size: 60px;
+  font-size: 30px;
   color: #e5ab54;
   font-weight: bold;
   margin-bottom: 5px;
@@ -142,14 +142,20 @@ footer {
   text-align: center;
   margin: 0;
 }
-
-.barra-footer {
-  width: 1px;
-  height: 60px;
-  background-color: #964b2c;
+#linea-central{
+  width: 60px;
 }
 
-/* MEDIA QUERY PARA CELULARES */
+.derecha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#textomesa{
+  width: 200px;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 250px;
@@ -190,13 +196,13 @@ footer {
   }
 
   .bloque-footer {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
 
   .barra-footer {
-    width: 60px;
-    height: 1px;
+    width: 1px;
+    height: 60px;
   }
 
   #numeroMesa {
@@ -205,5 +211,11 @@ footer {
 
   .texto-footer {
     font-size: 0.8rem;
+  }
+  #linea-central{
+    width: 30px;
+  }
+  #waze {
+    width: 20px;
   }
 }
