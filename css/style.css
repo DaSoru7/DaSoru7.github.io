@@ -206,16 +206,19 @@ footer {
   }
 
   #numeroMesa {
-    font-size: 40px;
+    font-size: 35px;
+  }
+  #textomesa{
+    width: 150px;
   }
 
   .texto-footer {
     font-size: 0.8rem;
   }
   #linea-central{
-    width: 30px;
+    width: 40px;
   }
   #waze {
-    width: 20px;
+    width: 150px;
   }
 }
