@@ -104,67 +104,52 @@ body {
   display: none; /* Aparece con JS */
 }
 
-/* Footer */
+/* FOOTER NUEVO TIPO IMAGEN */
 footer {
-  position: relative;
   width: 100%;
-  height: 100px;
   margin-top: 40px;
   z-index: 1;
 }
 
-.contenedor-footer {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.bloque-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.linea-centro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#linea-central {
-  height: 80px;
-  width: auto;
-}
-
-.izquierda, .derecha {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.footer-col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.izquierda {
-  right: 55%;
-}
-
-.derecha {
-  left: 55%;
-}
-
 #waze {
-  width: 100px;
+  width: 60px;
 }
 
 #numeroMesa {
-  font-size: 70px;
-  color: #e5ab54ff;
+  font-size: 60px;
+  color: #e5ab54;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-#textomesa {
-  height: 22px;
-  width: auto;
+.texto-footer {
+  font-size: 0.9rem;
+  color: #964b2c;
+  text-align: center;
+  margin: 0;
 }
 
-/* MEDIA QUERY para celulares */
+.barra-footer {
+  width: 1px;
+  height: 60px;
+  background-color: #964b2c;
+}
+
+/* MEDIA QUERY PARA CELULARES */
 @media (max-width: 768px) {
   .logo {
     width: 250px;
@@ -204,44 +189,21 @@ footer {
     font-size: 1.2rem;
   }
 
-  footer {
-    height: auto;
-    margin-top: 30px;
-  }
-
   .bloque-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .linea-centro {
-    position: static;
-    transform: none;
-  }
-
-  #linea-central {
-    height: 50px;
-  }
-
-  .izquierda,
-  .derecha {
-    position: static;
-    transform: none;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  #waze {
+  .barra-footer {
     width: 60px;
+    height: 1px;
   }
 
   #numeroMesa {
     font-size: 40px;
   }
 
-  #textomesa {
-    height: 20px;
+  .texto-footer {
+    font-size: 0.8rem;
   }
 }
