@@ -149,14 +149,31 @@ footer {
   width: 220px;
 }
 
+#colores{
+  width: 310px;
+}
+.vestimenta{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#hombre{
+  width: 65px;
+}
+#mujer{
+  width: 90px;
+}
+#iconos{
+  width: 310px;
+}
+#regalo{
+  width: 350px;
+}
+
+
 @media (max-width: 768px) {
   .logo {
     width: 150px;
-  }
-
-  .flor-esquina-superior,
-  .flor-esquina-inferior {
-    width: 70px;
   }
 
   #nombre {
@@ -189,7 +206,7 @@ footer {
   }
 
   .bloque-footer {
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -199,10 +216,10 @@ footer {
   }
 
   #numeroMesa {
-    font-size: 35px;
+    font-size: 45px;
   }
   #textomesa{
-    width: 150px;
+    width: 200px;
   }
 
   .texto-footer {
@@ -212,6 +229,48 @@ footer {
     width: 40px;
   }
   #waze {
-    width: 80px;
+    width: 120px;
+  }
+  #confirmacion{
+    width: 200px;
+  }
+  #colores{
+    width: 50px;
+  }
+  .vestimenta{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+  }
+  #hombre{
+    width: 35px;
+  }
+  #mujer{
+    width: 65px;
+  }
+  #iconos{
+    width: 310px;
+  }
+  #regalo{
+    width: 200px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    background-image: url('../html/img/fondo-floral.jpg.png') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+  }
+
+  .contenido-principal {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  img {
+    filter: none !important;
   }
 }
