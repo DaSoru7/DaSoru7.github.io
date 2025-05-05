@@ -8,6 +8,14 @@ body {
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+  background-image: url('../html/img/fondo-floral.jpg.png'); /* Ruta al fondo floral */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Contenedor principal con fondo amarillo */
@@ -29,25 +37,6 @@ body {
   display: block;
 }
 
-/* Flores decorativas */
-.flor-esquina-superior {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100px;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.flor-esquina-inferior {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  z-index: 0;
-  pointer-events: none;
-}
-
 /* Título nombre */
 #nombre {
   position: relative;
@@ -63,9 +52,8 @@ body {
 .contador {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  background-color: #e5ab54ff;
-  padding: 20px;
+  gap: 30px;
+  padding: 50px;
   border-radius: 15px;
   margin: 0px auto 30px auto;
   width: fit-content;
@@ -80,13 +68,13 @@ body {
 .contadordesc p {
   font-size: 2.5rem;
   margin: 0;
-  color: white;
+  color: #e5ab54;
   font-weight: bold;
 }
 
 .contadordesc span {
   font-size: 0.8rem;
-  color: white;
+  color: #e5ab54;
 }
 
 /* Fecha y hora */
@@ -113,6 +101,7 @@ footer {
 
 .bloque-footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -121,16 +110,16 @@ footer {
 
 .footer-col {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
 #waze {
-  width: 100px;
+  width: 180px;
 }
 
 #numeroMesa {
-  font-size: 30px;
+  font-size: 80px;
   color: #e5ab54;
   font-weight: bold;
   margin-bottom: 5px;
@@ -153,12 +142,16 @@ footer {
 }
 
 #textomesa{
-  width: 200px;
+  width: 250px;
+}
+
+#confirmacion{
+  width: 220px;
 }
 
 @media (max-width: 768px) {
   .logo {
-    width: 250px;
+    width: 150px;
   }
 
   .flor-esquina-superior,
