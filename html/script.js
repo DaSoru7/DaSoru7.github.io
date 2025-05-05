@@ -26,14 +26,12 @@ let interval = setInterval(function(){
     }
 }, 1000)
 
-  const params = new URLSearchParams(window.location.search);
-  
-  // Buscar el parámetro "mesa"
-  const mesa = params.get('mesa');
+const params = new URLSearchParams(window.location.search);
 
-  // Mostrar el número en el HTML
-  if (mesa) {
-    document.getElementById('numeroMesa').textContent = mesa;
-  } else {
-    document.getElementById('numeroMesa').textContent = "No asignada"; // Por si no ponen número
-  }
+// Número de mesa
+const mesa = params.get('mesa');
+document.getElementById('numeroMesa').textContent = mesa || "No asignada";
+
+// Cantidad de personas
+const cantPersonas = params.get('long');
+document.getElementById('cantPersonas').textContent = cantPersonas || "No asignado";

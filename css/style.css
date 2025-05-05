@@ -92,6 +92,23 @@ body {
   display: none; /* Aparece con JS */
 }
 
+#texto1, #texto2{
+  width:300px;
+}
+
+.cantidad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cantPersonas{
+  font-size: 80px;
+  color: #e5ab54;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 /* FOOTER NUEVO TIPO IMAGEN */
 footer {
   width: 100%;
@@ -205,6 +222,17 @@ footer {
     font-size: 1.2rem;
   }
 
+  #texto1, #texto2{
+    width:260px;
+  }
+  
+  #cantPersonas{
+    font-size: 50px;
+    color: #e5ab54;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
   .bloque-footer {
     flex-direction: column;
     gap: 20px;
@@ -232,10 +260,10 @@ footer {
     width: 120px;
   }
   #confirmacion{
-    width: 200px;
+    width: 180px;
   }
   #colores{
-    width: 150px;
+    width: 180px;
   }
   .vestimenta{
     display: flex;
@@ -243,7 +271,7 @@ footer {
     width: 100px;
   }
   #hombre{
-    width: 65px;
+    width: 40px;
   }
   #mujer{
     width: 65px;
@@ -258,7 +286,7 @@ footer {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #ffffff !important;
-    color: #000000 !important;
+    color: #ffffff !important;
     background-image: url('../html/img/fondo-floral.jpg.png') !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
