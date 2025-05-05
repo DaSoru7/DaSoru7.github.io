@@ -235,7 +235,7 @@ footer {
     width: 200px;
   }
   #colores{
-    width: 50px;
+    width: 150px;
   }
   .vestimenta{
     display: flex;
@@ -243,7 +243,7 @@ footer {
     width: 100px;
   }
   #hombre{
-    width: 35px;
+    width: 65px;
   }
   #mujer{
     width: 65px;
@@ -252,7 +252,7 @@ footer {
     width: 310px;
   }
   #regalo{
-    width: 200px;
+    width: 250px;
   }
 }
 @media (prefers-color-scheme: dark) {
